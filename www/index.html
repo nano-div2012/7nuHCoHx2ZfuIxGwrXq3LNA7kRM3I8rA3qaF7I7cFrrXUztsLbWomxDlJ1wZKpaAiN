@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta http-equiv="Refresh" content="0; url='https://example.com/'" />
-    <script>window.location.replace("https://example.com/");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenzAPK - Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d12;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: #16161e;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #2a2a38;
+        }
+
+        .banner {
+            width: 100%;
+            height: 160px;
+            background: linear-gradient(135deg, #6e00ff, #ff0055);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 15px rgba(110, 0, 255, 0.3);
+        }
+
+        .banner h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .banner p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn-link {
+            display: block;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .btn-link:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        .btn-tiktok {
+            background-color: #252532;
+            color: #ffffff;
+            border: 1px solid #3a3a4d;
+        }
+
+        .btn-darkgpt {
+            background: linear-gradient(90deg, #ff0055, #ff4d4d);
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 0, 85, 0.3);
+        }
+    </style>
 </head>
-<body style="margin:0;padding:0;background-color:#ffffff;display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;">
-    Redirecting...
+<body>
+
+    <div class="container">
+        <!-- Tampilan Banner RenzAPK -->
+        <div class="banner">
+            <h1>RenzAPK</h1>
+            <p>Selamat Datang</p>
+        </div>
+
+        <!-- Daftar Teks / Tombol Link -->
+        <div class="link-group">
+            <a href="https://www.tiktok.com/@renzkvp" target="_blank" rel="noopener noreferrer" class="btn-link btn-tiktok">
+                Ikuti RenzKVP
+            </a>
+
+            <a href="https://darkgpt.chat/" target="_blank" rel="noopener noreferrer" class="btn-link btn-darkgpt">
+                Mulai Chat DarkGPT
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
